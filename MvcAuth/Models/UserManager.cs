@@ -7,7 +7,7 @@ namespace MvcAuth.Models
 {
     public class UserManager
     {
-        private List<User> _users = new List<User>();
+        public List<User> _users = new List<User>();
 
 
         private UserManager()
