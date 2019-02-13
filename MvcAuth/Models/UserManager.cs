@@ -7,10 +7,10 @@ namespace MvcAuth.Models
 {
     public class UserManager
     {
-        public List<User> _users = new List<User>();
+        private List<User> _users = new List<User>();
 
 
-        private UserManager()
+        public UserManager()
         {
             _users.Add(new User
             {

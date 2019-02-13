@@ -9,8 +9,8 @@ namespace MvcAuth.Controllers
 {
     public class LoginController : Controller
     {
-        
-        public ActionResult Index()
+
+         public ActionResult Index()
         {
             return View();
         }
@@ -31,8 +31,16 @@ namespace MvcAuth.Controllers
                 return RedirectToAction("Index");
             }
         }
+
+        public ActionResult Logout()
+        {
+            Session.Clear();
+            Session.Abandon();
+            return RedirectToAction("Index", "Home");
+        }
+
+
     }
 
-
-    
 }
+    
