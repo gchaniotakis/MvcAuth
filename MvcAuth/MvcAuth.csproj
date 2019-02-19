@@ -207,10 +207,10 @@
     <Content Include="Scripts\popper-utils.js.map" />
     <Content Include="Views\Login\Index.cshtml" />
     <Content Include="Views\Login\Success.cshtml" />
+    <Content Include="Views\Secure\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Secure\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -9,7 +9,7 @@ namespace MvcAuth.Controllers
     public class SecureController : Controller
     {
         // GET: Secure
-        [Authorize ]
+        [Authorize(Roles = "users,admin,developers,owner")]
         public ActionResult Index()
         {
             return View();
