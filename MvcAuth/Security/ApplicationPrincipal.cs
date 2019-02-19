@@ -19,9 +19,11 @@ namespace MvcAuth.Security
 
         public bool IsInRole(string role)
         {
-            var roles = role.Split(new[] { ',' }, StringSplitOptions.RemoveEmptyEntries);
+            var roles = role.Split(new [] { ',' }, StringSplitOptions.RemoveEmptyEntries);
             return roles.Any(r => _user.Roles.Contains(r));
         }
+
+
 
 
         public IIdentity Identity { get; }

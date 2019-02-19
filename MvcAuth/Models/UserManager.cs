@@ -53,5 +53,10 @@ namespace MvcAuth.Models
 
             return _users.Any(u => u.Username == username);
         }
+
+        public User Find(string username)
+        {
+            return _users.FirstOrDefault(u => u.Username == username);
+        }
     }
 }

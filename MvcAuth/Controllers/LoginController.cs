@@ -39,7 +39,10 @@ namespace MvcAuth.Controllers
             return RedirectToAction("Index", "Home");
         }
 
-
+        public ActionResult AccessDenined()
+        {
+            return View();
+        }
     }
 
 }
