@@ -5,7 +5,7 @@ using System.Web;
 
 namespace MvcAuth.Security
 {
-    public class Application_Principal
+    public class ApplicationPrincipal
     {
     }
 }
